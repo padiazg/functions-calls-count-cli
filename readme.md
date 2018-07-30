@@ -1,4 +1,6 @@
-# How many requests had your functions in a period of time
+# OpenFaaS - Functions call count
+
+This project is intended to query how many times your functions where called in a period of time.
 
 While we were monitoring the performance of our functions, some people requested reports on the number of requests we were handling, broken down by functions and by periods of time.
 
@@ -10,7 +12,7 @@ http://localhost:9090/api/v1/query_range?query=gateway_function_invocation_total
 
 As they were occasional reports, I prepared a small online command program to perform the query and format the output.
 
-## Before start
+## Before you start quering
 Install dependencies with ```npm i```
 
 If you call the program with no params it will show you some help.
